@@ -13,3 +13,43 @@
       
 
 ****Your work will directly support automated safety monitoring by enabling scalable, real-time detection of helmet compliance across hazardous work environments****
+
+**Alerting Module Overview**
+
+### 🎯 Purpose
+
+-   Instantly notify supervisors or safety personnel of helmet non-compliance
+
+-   Trigger automated responses to reduce delays in intervention
+
+### ⚙️ Key Functions
+
+-   **Event Triggering**: When the computer vision model detects "Without Helmet," an event is generated.
+
+-   **Notification System**:
+
+    -   Real-time alerts via SMS, email, or in-app push notification
+
+    -   Optional integration with walkie-talkie systems, PA systems, or smart wearables
+
+-   **Location Tagging**: Pinpoints where the violation occurred using site cameras and geolocation metadata
+
+-   **Severity Prioritization**:
+
+    -   Flags multiple violations as high-priority
+
+    -   Configurable thresholds (e.g. X violations in Y minutes triggers a site-wide alert)
+
+-   **Logging & Escalation**:
+
+    -   Automatically logs all alerts into the safety audit trail
+
+    -   Escalates unresolved alerts to higher management after set time intervals
+
+### 🔁 Feedback Loop
+
+-   Alerts feed back into the model evaluation system to check for false positives/negatives
+
+-   Helps improve model precision over time
+
+<img width="1024" height="1536" alt="helmetNoHelmet" src="https://github.com/user-attachments/assets/d47aa7fc-5cc7-4c4b-9cce-f35d96af6ea6" />
